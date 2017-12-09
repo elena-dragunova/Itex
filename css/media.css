@@ -1,0 +1,4 @@
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .nav-menu li a {
+    margin-right: 1em; } }
