@@ -32,7 +32,38 @@ $(document).ready(function(){
     checkBoxes();
   });
 
+  //Список дел
+  $(".confirm-button").click(function() { 
+      var newItem = $("input[name=list-item-input]").val();
+      
+      if (!newItem) {
+        alert("Введите текст");
+        return false;
+      }
 
+      $(".list").append('<li class="list-item"><span class = "list-item-text">'+newItem+
+        '</span><button class = "button-edit"><i class="fa fa-pencil" aria-hidden="true"></i></button>'+
+        '<button class = "button-remove"><i class="fa fa-times" aria-hidden="true"></i></button></li>');
+      $(".list-input").val("");
+
+      $(".button-remove").click(function() { 
+        $(this).parents(".list-item").remove();
+        return false;
+      });
+
+      $(".button-edit").click(function() { 
+        $(this).closest("li").find("span").prop("contenteditable", true).focus();
+        return false;
+      });
+
+      return false;
+
+  });
+
+  $(".clear-button").click(function() { 
+        $(".list-input").val("");
+        return false;
+  });
 
 });
 
