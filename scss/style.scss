@@ -470,3 +470,77 @@ button.accordion-button.acc-active:after {
 	color: #000;
 	margin-bottom: 1.25rem;
 }
+
+.map {
+	padding: 0 0.375em;
+}
+
+/* Футер */ 
+
+footer {
+	background-color: #000;
+	padding: 1.875em 0;
+}
+
+footer li {
+	display: inline;
+}
+
+footer .footer-menu li a {
+	color: #818180;
+	font-family: $Myriad;
+	font-size: 0.875rem;
+	line-height: 2.143rem;
+	margin-right:1.714em;
+}
+
+footer .footer-menu li a:hover,
+footer .footer-menu li a:focus,
+footer .footer-menu li a:active {
+	text-decoration: none;
+	color: #818180;
+}
+
+footer .footer-menu li a.footer-active {
+	color: #d3d3d3;
+}
+
+footer .footer-menu li a.footer-active:before {
+	content: '>';
+	color: $main-color;
+	padding-right: 6px;
+}
+
+.copy {
+	color: #d3d3d3;
+	font-family: $Myriad;
+	font-size: 0.875rem;
+	margin-bottom: 1.857em;
+	margin-top: 1em;
+}
+
+.logo-yellow {
+	margin-bottom: 1.5em;
+}
+
+.itex-info {
+	position: relative;
+}
+
+.itex-link {
+	font-family: $Myriad;
+	color:  #d3d3d3;
+	font-size: 0.875rem;
+	text-decoration: underline;
+	transition: all 0.9s ease;
+	padding-left: 1.571em;
+	position: absolute;
+	top: 3px;
+}
+
+.itex-link:hover,
+.itex-link:focus,
+.itex-link:active {
+	text-decoration: none;
+	color:  #d3d3d3;
+}

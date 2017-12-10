@@ -33,6 +33,7 @@ $(document).ready(function(){
   });
 
   //Список дел
+
   $(".confirm-button").click(function() { 
       var newItem = $("input[name=list-item-input]").val();
       
@@ -103,5 +104,5 @@ function showSlides(n) {
 
 function plusSlides(n) {
 	clearTimeout(interval);
-  	showSlides(slideIndex += n);
+  showSlides(slideIndex += n);
 }
