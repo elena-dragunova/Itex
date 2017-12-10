@@ -4,4 +4,60 @@
 	.nav-menu li a {
 		margin-right: 1em;
 	}
+
+	.services-item {
+		height: 250px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.slideshow-container {
+		padding-top: 2.5em;
+	}
+
+	.caption-text {
+		line-height: 1.2rem;
+		left: 35%;
+	}
+
+	.price {
+		font-size: 2rem;
+		margin-top: -20px;
+		margin-right: -20px;
+	}
+
+	.service-text {
+		text-align: center;
+		margin-top: 1.5em;
+	}
+
+	.accordion h2 {
+		margin-top: 2em;
+	}
+
+	.order-button {
+		margin-left: 2em;
+		width: 100px;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.slideshow-container {
+		padding: 5.5em 0;
+	}
+
+	.caption-text {
+		left: 10%;
+	}
+
+	.price, .text-bold {
+		margin-right: -20px;
+		font-size: 120%;
+		display: inline;
+		padding-left: 0.5em;
+		line-height: 1.3rem;
+	}
 }

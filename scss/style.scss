@@ -6,6 +6,8 @@ html {
 	font-size: 100%;
 }
 
+/* Шапка и меню */
+
 .head {
 	background-color: $main-color;
 	padding-top: 1.563em;
@@ -128,10 +130,282 @@ html {
 	text-align: left;
 }
 
+/* Слайдер */ 
+
 .slider {
-	background-color: $main-color;
+	background-color: #ffb802;
+}
+
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	padding:1.125em 0;
+	display: flex;
+	justify-content: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	bottom: 0;
+	width: auto;
+	padding: 6px 12px;
+	margin: 0 auto;
+	color: #ffb602;
+	font-weight: bold;
+	font-size: 24px;
+	transition: 0.6s ease;
+	background-color: #000;
+}
+
+.prev:hover, .next:hover {
+	text-decoration: none;
+	color: #000;
+	background-color: #ffb602;
+}
+
+.prev {
+	bottom: 35px;
+	margin-left: -18px;
+}
+
+.next {
+	margin-left: 18px;
+}
+
+.caption-text {
+	font-family: $PT;
+	font-size: 0.875rem;
+	line-height: 1.714rem;
+	font-weight: 700;
+	color: #000;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	text-transform: uppercase;
+	margin: 1.786em 0;
+}
+
+.price {
+	color: #fff;
+	font-size: 3.75rem;
+	text-align: right;
+	line-height: 2rem;
+	text-transform: none;
+	margin-right: -50px;
+	margin-top: -10px;
+}
+
+.text-bold {
+	font-size: 1.5rem;
+	color: #000;
+}
+
+.dots {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.dot {
+	height: 13px;
+	width: 13px;
+	margin: 13px 0;
+	background-color: #000;
+	display: block;
+	transition: background-color 0.6s ease;
+}
+
+.dot-active, .dot:hover {
+	background-color: #fff;
+}
+
+/* Каталог */
+
+.catalog {
+	background-color: #FFF;
+	padding-top: 3.286em;
+
+}
+
+.breadcrumb {
+	background-color: #FFF;
+}
+
+.breadcrumb li {
+	font-family: $PT;
+	font-size: 0.75rem;
+}
+
+.breadcrumb li a {
+	color: #ffb802;
+	font-family: $PT;
+	font-size: 0.75rem;
+}
+
+.accordion {
+	margin-top: 4.25em;
+	border-bottom: 2px solid #818180;
+	padding-bottom: 3.313em;
+	margin-bottom: 2em;
+}
+
+.accordion h2 {
+	font-family: $PT;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.accordion-main {
+	margin-top: 2.375em;
+}
+
+.accordion-button {
+	background-color: #FFF;
+	border: 1px solid #cdcdcd;
+	box-shadow: 1px 2px 5px 0px #000;
+	width: 100%;
+	height: 40px;
+	text-align: left;
+	font-family: $PT;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #000;
+	padding-left: 20px;
+	transition: 0.4s;
+}
+
+.accordion-panel {
+	font-family: $PT;
+	padding: 2.250em 0;
+}
+
+.checkbox-item {
+	position:relative;
+}
+
+input[type="checkbox"]+label {
+	padding: 0.938em;
+	margin-left: 2.938em;
 }
 
 
+input[type="checkbox"]+label::before {
+	content: '';
+	display:inline-block;
+	height: 26px;
+	width:26px;
+	background-image: url("../img/checkbox.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:absolute;
+	left: 0;
+	top: 9px;
+}
 
+input[type="checkbox"]:checked + label::before {
+	background-image: url("../img/checkbox-checked.png");
+}
+
+button.accordion-button:after {
+    content: ''; 
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    position:absolute;
+    right: 41px;
+    margin-top: 2px;
+    background-image: url("../img/arrow-down.png");
+    background-repeat: no-repeat;
+}
+
+button.accordion-button.acc-active:after {
+	background-image: url("../img/arrow-up.png");
+}
+
+.total-price {
+	margin-top: 1.458em;
+}
+
+.total-price p{
+	display: inline-block;
+	font-family: $PT;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.order-button {
+	background: linear-gradient(0deg, #fab500 0%, #fbbf01 61%, #fdcf03 100%);
+	width: 133px;
+	height: 33px;
+	font-family: $PT;
+	font-size: 0.75rem;
+	color: #000;
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 33px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+	margin-left: 4.417em;
+}
+
+
+/* Услуги */
+
+.services {
+	background-color: #FFF;
+}
+
+.services h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $PT;
+	font-size: 1.5rem;
+	color: #000;
+	font-weight: 700;
+	margin: 0.833em 0;
+}
+
+.services-main {
+	background-color: $main-color;
+	padding-bottom: 2em;
+}
+
+.services-item {
+	margin-top: 3em;
+	margin-bottom: 1.5em;
+	height:200px;
+}
+
+.service-img {
+	margin: 0 auto;
+}
+
+.service-text {
+	padding: 0 1em;
+}
+
+.service-text h2 {
+	font-family: $PT;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 1.25rem;
+	margin-top: 0.3em;
+	margin-bottom: 1.7em;
+}
+
+.service-text p {
+	font-family: $PT;
+	color: #000;
+	font-size: 0.875rem;
+	line-height: 1.714rem;
+}
 
